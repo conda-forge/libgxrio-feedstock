@@ -1,18 +1,17 @@
 context:
   name: libgxrio
   version: "1.0.2"
-  author: "mhekkel"
 
 package:
   name: ${{ name }}
   version: ${{ version }}
 
 source:
-  url: https://github.com/${{ author }}/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 9740ef8fe93ef19646d65ce906da8336a39b3b8ccec4c7c93a867c729db0cbcc
+  url: https://forge.hekkelman.net/maarten/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
+  sha256: 639b19a6aaf2f1f576a620c120e7dc5dd392eb2cdc3d75cc677c1d7aca2502bf
 
 build:
-  number: 2
+  number: 3
   script:
     - if: unix
       then: |
@@ -68,9 +67,9 @@ tests:
         - gxrio.hpp
 
 about:
-  homepage: https://github.com/mhekkel/gxrio
-  repository: https://github.com/mhekkel/gxrio
-  documentation: https://github.com/mhekkel/libgxrio/blob/v${{ version }}/README.md
+  homepage: https://forge.hekkelman.net/maarten/gxrio
+  repository: https://forge.hekkelman.net/maarten/gxrio
+  documentation: https://forge.hekkelman.net/maarten/gxrio/src/tag/v${{ version }}/README.md
   license: BSL-1.0
   license_file: LICENSE_1_0.txt
   summary: "A header only library to read and write compressed files using a standard streams interface"
