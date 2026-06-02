@@ -1,13 +1,13 @@
 context:
-  name: libgxrio
+  name: gxrio
   version: "1.0.2"
 
 package:
-  name: ${{ name }}
+  name: lib${{ name }}
   version: ${{ version }}
 
 source:
-  url: https://forge.hekkelman.net/maarten/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
+  url: https://forge.hekkelman.net/maarten/${{ name }}/archive/v{{ version }}.tar.gz
   sha256: 639b19a6aaf2f1f576a620c120e7dc5dd392eb2cdc3d75cc677c1d7aca2502bf
 
 build:
