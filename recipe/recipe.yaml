@@ -49,17 +49,15 @@ requirements:
   build:
     - ${{ compiler("cxx") }}
     - ${{ stdlib("c") }}
+    - ${{ "jom" if win else "make" }}
     - cmake
-    - if: unix
-      then: make
-    - if: win
-      then: jom
   host:
     - libboost-devel
     - liblzma
     - zlib
   ignore_run_exports:
-    from_package: libboost-devel
+    from_package:
+      - libboost-devel
 
 tests:
   - package_contents:
