@@ -1,6 +1,6 @@
 context:
   name: gxrio
-  version: "1.1.0"
+  version: "1.2.0"
 
 package:
   name: libgxrio
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://forge.hekkelman.net/maarten/${{ name }}/archive/v${{ version }}.tar.gz
-  sha256: c762251ca8894fc6f778d63efeda5a3137925d804c850c74c2ab094b5210a502
+  sha256: b70839c405cc56f11f4d8e236ff12be09f350f2ac44ab876193fe342f7c68c8e
 
 build:
   number: 0
