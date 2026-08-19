@@ -11,7 +11,7 @@ Summary: A header only library to read and write compressed files using a standa
 
 Development: https://forge.hekkelman.net/maarten/gxrio
 
-Documentation: https://forge.hekkelman.net/maarten/gxrio/src/tag/v1.1.0/README.md
+Documentation: https://forge.hekkelman.net/maarten/gxrio/src/tag/v1.2.0/README.md
 
 Current build status
 ====================

@@ -1,5 +1,8 @@
 @echo on
 
+@REM Fix MSVC build: `std::array` iterators are not raw pointers, while `setp()` requires pointers
+sed -i.bak "s/Base::setp(buffer_\.begin(), buffer_\.end());/Base::setp(buffer_.data(), buffer_.data() + buffer_.size());/" test/unit-test-xz.cpp
+
 cmake -S . -B build -G "NMake Makefiles JOM" ^
   %CMAKE_ARGS% ^
   -DCMAKE_WINDOWS_EXPORT_ALL_SYMBOLS=ON ^
