@@ -39,7 +39,7 @@ about:
   repository: https://forge.hekkelman.net/maarten/gxrio
   documentation: https://forge.hekkelman.net/maarten/gxrio/src/tag/v${{ version }}/README.md
   license: BSL-1.0
-  license_file: LICENSE_1_0.txt
+  license_file: LICENSES/LICENSE_1_0.txt
   summary: "A header only library to read and write compressed files using a standard streams interface"
 
 extra:
