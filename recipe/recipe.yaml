@@ -21,7 +21,7 @@ requirements:
     - cmake
   host:
     - libboost-devel
-    - liblzma
+    - liblzma-devel
     - zlib
   ignore_run_exports:
     from_package:
