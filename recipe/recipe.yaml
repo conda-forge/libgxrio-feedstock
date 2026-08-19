@@ -20,11 +20,13 @@ requirements:
     - ${{ "jom" if win else "make" }}
     - cmake
   host:
+    - catch2
     - libboost-devel
     - liblzma-devel
     - zlib
   ignore_run_exports:
     from_package:
+      - catch2
       - libboost-devel
 
 tests:
