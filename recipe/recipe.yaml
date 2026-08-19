@@ -17,6 +17,7 @@ requirements:
   build:
     - ${{ compiler("cxx") }}
     - ${{ stdlib("c") }}
+    - ${{ "m2-sed" if win }}
     - ${{ "jom" if win else "make" }}
     - cmake
   host:
